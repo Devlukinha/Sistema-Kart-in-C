@@ -1,11 +1,14 @@
-# Diretórios de build do CMake
-cmake-build-*/
+# Executáveis Windows
+*.exe
 
-# Arquivos temporários do CLion
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/shelf/
+# Arquivos objeto
+*.o
+*.obj
 
-# Arquivos de sistema
-.DS_Store
-Thumbs.db
+# Bibliotecas
+*.dll
+*.lib
+
+# Arquivos temporários
+*.log
+
