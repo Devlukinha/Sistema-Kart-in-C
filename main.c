@@ -1,19 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
 #include <locale.h>
 
-void saudacaoMsg() {
+void limparTela(void) {
 
-    printf("Funcionou!");
+    system("cls");
 }
 
-void menu() {
+struct kart {
+    char modelo[30], cor[30];
+    float valorLocacao, valorManutencao;
+    int vezesLocado, statusKart, statusLocacao;
+};
+
+void cadastrarKart(struct kart k[], int posicao) {
+
+}
+
+void menu(void) {
 
     setlocale(LC_ALL, "Portuguese");
 
-    int option;
+    int option = 0;
     bool rep = true;
+
+    struct kart k[15] = {0};
 
     printf("\n--------------BEM VINDO AO MENU DO SISTEMA KART------------\n");
 
@@ -36,11 +49,11 @@ void menu() {
 
         switch (option) {
             case 1:
-                saudacaoMsg();
                 rep = false;
                 break;
-                case 2:
-                 printf("Caiu no case 2");
+
+            case 2:
+                printf("Caiu no case 2");
                 rep = false;
                 break;
         }
